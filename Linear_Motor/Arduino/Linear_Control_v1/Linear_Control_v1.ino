@@ -1,7 +1,6 @@
 //리니어 모터 앞/뒤, 속도 조작 아두이노 소스코드 V1
 
 //https://blog.naver.com/PostView.naver?blogId=emperonics&logNo=221834467735
-//(출처)
 
 const int ENABLE=10;            // 모터1사용 가능 제어핀과 동시에 속도제어핀 역할
 const int DIR1=9;               // 방향제어를 위한 핀1
