@@ -1,0 +1,33 @@
+#define RED_PIN 5   // 빨간색 LED 핀
+#define GREEN_PIN 10 // 초록색 LED 핀
+#define BLUE_PIN 8   // 파란색 LED 핀
+
+void setup() {
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+}
+
+void loop() {
+  // 빨간색 켜기
+  setColor(255, 0, 0);
+  delay(1000);
+
+  // 초록색 켜기
+  setColor(0, 255, 0);
+  delay(1000);
+
+  // 파란색 켜기
+  setColor(0, 0, 255);
+  delay(1000);
+
+  // LED 끄기
+  setColor(0, 0, 0);
+  delay(1000);
+}
+
+void setColor(int red, int green, int blue) {
+  analogWrite(RED_PIN, red);
+  analogWrite(GREEN_PIN, green);
+  analogWrite(BLUE_PIN, blue);
+}
